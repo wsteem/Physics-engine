@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 95%;
+}
+body {
+    background-color: rgb(227, 227, 227);
+    height: 100%;
+}
+.content {
+    height: inherit;
+    width: inherit;
+}
+.nav-bar {
+    position: relative;
+    width: 100%;
+    height: 6%;
+    margin: auto;
+    padding: 2px;
+    box-shadow: 0px 2px 2px rgb(50,50,50);
+    background-color: rgb(36, 48, 56);
+}
+.main {
+    position: relative;
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    background-color: white;
+    border: 1px solid rgb(50,50,50);
+    border-radius: 5px;
+    text-align: center;
+}
+.toolbar {
+    position: absolute;
+    top: 0;
+    height: 10%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    border-bottom: solid 1px rgb(50,50,50);
+    border-radius: 5px 5px 0 0;
+}
+.sidebar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 89%;
+    width: 15%;
+    margin: auto;
+    padding: 2px;
+    align-content: center;
+    border-right: solid 1px rgb(50,50,50);
+    border-radius: 5px;
+}
+.canvas {
+    color: inherit;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 84%;
+    padding: 0;
+}
+.mouse-pos {
+    position: inherit;
+    bottom: 0;
+    background-color: rgb(227, 227, 227);
+    font-size: smaller;
+    width: 15%;
+    border: none;
+    border-radius: 3px 3px 0 0;
+    z-index: 1;
+}
+.info p {
+    height: 0;
+}
+.map {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: 89%;
+    width: 84%;
+}
+.mass {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+}
+svg {
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+}
+
+a {
+    position: relative;
+    color: rgb(230, 238, 229);
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: rgb(243, 236, 236); 
+    color:rgb(36, 48, 56);
+}
+
+.search-box{
+    width: 400px;
+    background: #fff;
+    margin: -45px auto 0;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+input{
+    flex: 1;
+    height: 25px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+button .fa-solid{
+    width: 25px;
+    color: #555;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: #555;
+}
+
+::placeholder{
+    color: #555;
+}
+
+.result-box ul{
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.result-box ul li:hover{
+    color: rgb(36, 48, 56);
+    background: white;
+}
+
+.result-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* To make available keywords scroll if there are many available keywords*/
+.result-box{
+    max-height: 300px;
+    overflow-y: scroll;
+    z-index: 10;
+    background-color: rgb(36, 48, 56);
+    color: white;
+    width: 400px;
+}
+
+

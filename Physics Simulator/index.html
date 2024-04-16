@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Engine</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://kit.fontawesome.com/f9ac9693dd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="nav-bar">
+            <a href="homepage.html" class="fa-solid fa-house"> Home</a>
+            <a href="about.html" class="fa-regular fa-address-card"> About</a>
+            <a href="team.html" class="fa-solid fa-users"> Team</a>
+            <div class="search-box">
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Search anything.." autocomplete="off">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div class="result-box-container">
+                <div class="result-box"></div>
+            </div>
+            
+            
+        </div>
+
+        <div class="title">
+            <h1>Physics Simulator</h1>
+        </div>
+        <div class="main">
+            <div class="toolbar">
+                <button class="button" onclick="add_mass()">Add Mass</button>
+            </div>
+            <div class="sidebar">
+                <p>sidebar</p>
+            </div>
+            <div class="canvas">
+                <div class="scale">
+
+                </div>
+                <div class="map" id="map">
+
+                </div>
+            </div>
+            <div class="info">
+                <div class="mouse-pos" id="mouse-pos">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
